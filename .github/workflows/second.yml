@@ -1,0 +1,14 @@
+name: "second"
+
+on:
+  push:
+    branches:
+      - master
+      - test
+
+jobs:
+  hello_world:
+    runs-on: ubuntu-latest
+    steps:
+      - name: "Print Hello second"
+        run: echo "welome to second yml file"
