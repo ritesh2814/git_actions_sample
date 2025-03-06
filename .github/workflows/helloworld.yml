@@ -1,0 +1,14 @@
+name : "Hello_wold"
+
+on:
+    push:
+        branches:
+            - master
+            - production
+
+ jobs:
+    hello_word:
+        runs-on: ubuntu-latest
+        steps:
+            - name: "print hello world"  
+            run: echo "HelloWorld"
